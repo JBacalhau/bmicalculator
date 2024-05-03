@@ -1,0 +1,24 @@
+.header {
+    padding-left: 24px;
+    padding-right: 24px;
+    
+    margin-left: auto;
+    margin-right: auto;
+
+    @include hero();
+
+    @include conty();
+
+    @include herot();
+
+    @include limitation();
+
+
+
+
+    @media(max-width: 1200px) {
+       
+        padding: 0;
+
+    }
+}

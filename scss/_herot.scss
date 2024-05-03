@@ -1,0 +1,133 @@
+@mixin herot() {
+
+    .hero-tips {
+        background-image: url(../img/tips.png);
+        background-position: center;
+        border-radius: 35px;
+        background-size: cover;
+        box-sizing: border-box;
+
+        .container-tips {
+            width: 100%;
+            max-width: 1208px;
+            box-sizing: border-box;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            margin-top: 96px;
+            margin-bottom: 120px;
+
+            .tips {
+                padding-top: 72px;
+                padding-bottom: 96px;
+                width: 365px;
+
+
+                h3 {
+                    margin-top: 45px;
+                    margin-bottom: 24px;
+                }
+            }
+
+            .t-regular {
+                margin-right: 32px;
+                margin-left: 32px;
+            }
+        }
+    }
+
+    @media(max-width: 1200px) {
+        .hero-tips {
+            background-image: url(../img/tips.png);
+            background-position: center;
+            border-radius: 0;
+            background-size: cover;
+            box-sizing: border-box;
+
+
+            .container-tips {
+                flex-direction: column;
+
+
+                .tips {
+                    box-sizing: border-box;
+                    padding-top: 72px;
+                    padding-bottom: 0;
+                    min-width: 696px;
+                    width: 100%;
+                    padding-left: 39px;
+                    padding-right: 43px;
+                    display: flex;
+
+                    .cont {
+                        margin-top: -15px;
+                        margin-left: 40px;
+                        h3 {
+                            margin-top: 0;
+                            margin-bottom: 24px;
+                        }
+
+                        p {
+                            margin-bottom: 15px;
+                        }
+                    }
+                }
+
+                .t-regular {
+                    margin: 0;
+                }
+            }
+        }
+
+    }
+
+    @media(max-width: 768px) {
+        
+        .hero-tips {
+            background-image: url(../img/tips.png);
+            background-position: center;
+            border-radius: 0;
+            background-size: cover;
+            box-sizing: border-box;
+
+
+            .container-tips {
+
+                max-width: 1208px;
+                box-sizing: border-box;
+                margin-left: auto;
+                margin-right: auto;
+                flex-direction: column;
+
+
+                .tips {
+                    padding-top: 40px;
+                    padding-bottom: 0;
+                    min-width: 351px;
+                    width: 100%;
+                    padding-left: 19px;
+                    padding-right: 29px;
+                    flex-direction: column;
+
+                    .cont {
+                        margin-top: 32px;
+                        margin-left: 0;
+                        h3 {
+                            margin-top: 0;
+                            margin-bottom: 24px;
+                        }
+
+                        p {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+
+                .t-regular {
+                    margin: 0;
+                }
+            }
+        }
+
+    }
+}

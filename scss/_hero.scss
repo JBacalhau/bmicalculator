@@ -1,0 +1,604 @@
+@mixin hero() {
+    .show {
+        display: block !important;
+    }
+
+    .hero {
+        width: 100%;
+        max-width: 1392px;
+        height: 737px;
+        background-image: url(../img/Rectangle\ 6.png);
+        background-position-y: bottom;
+        background-repeat: no-repeat;
+        margin-left: auto;
+        margin-right: auto;
+
+
+        .container {
+            width: 100%;
+            max-width: 1208px;
+            box-sizing: border-box;
+            margin-left: auto;
+            margin-right: auto;
+
+
+            img {
+                margin-top: 75px;
+            }
+
+            .body-mass {
+                display: flex;
+                justify-content: space-between;
+
+                .content {
+
+                    width: 465px;
+
+                    h1 {
+                        margin-top: 127px;
+                        margin-bottom: 35px;
+
+                    }
+
+
+                }
+
+                .details-below {
+                    background-color: $white;
+                    border-radius: 16px;
+                    width: 564px;
+                    min-height: 452px;
+                    height: 100%;
+                    padding: 32px;
+                    box-shadow: 16px 32px 56px 0px rgba(143, 174, 207, 0.25);
+                    box-sizing: border-box;
+
+                    h6 {
+                        margin-bottom: 32px;
+                    }
+
+
+                    .btnraio {
+                        display: flex;
+                        column-gap: 163px;
+
+                        .margen {
+                            display: flex;
+                            align-items: center;
+                            column-gap: 18px;
+
+                            button {
+                                width: 31px; // Largura desejada
+                                height: 31px; // Altura desejada
+                                border: 1px solid $borders; // Adiciona uma borda
+                                border-radius: 50%; // Bordas arredondadas para um visual de botão
+                                background-color: $white;
+                                display: inline-block;
+                                cursor: pointer;
+                                box-sizing: border-box;
+                                outline: none;
+
+                                &:hover {
+                                    border: 1px solid $blue;
+
+                                }
+
+                            }
+
+
+                            .active-tec {
+                                display: inline-block;
+                                width: 15px; // Largura desejada
+                                height: 15px; // Altura desejada
+                                background-color: $blue;
+                                box-shadow: 0 0 0 8px $borders;
+                                border: 1px solid transparent; // borda transparente para não aumentar o botão quando ativa o hover
+                                border-radius: 50%;
+                                margin-left: 8px;
+                                margin-right: 8px;
+
+                            }
+
+                            .text {
+
+                                color: $gunmetal;
+                                font-weight: 700;
+
+                                //margin-right: 120px;
+                            }
+                        }
+                    }
+
+                    .metric {
+
+                        form {
+                            display: flex;
+                            margin-top: 32px;
+                            column-gap: 24px;
+
+                            .panel-1 {
+                                margin-bottom: 32px;
+                                position: relative;
+
+                                input {
+                                    background-color: $white;
+                                    width: 240px;
+                                    height: 69px;
+                                    border-radius: 12px;
+                                    border: 1px solid $borders;
+                                    padding: 20px 83px 20px 24px;
+                                    color: $gunmetal;
+                                    box-sizing: border-box;
+                                    cursor: pointer;
+
+                                    &:focus {
+                                        outline: solid 1px $blue;
+                                    }
+
+                                    &::placeholder {
+                                        color: $borders;
+                                    }
+
+
+
+                                }
+
+                                .unit {
+                                    position: absolute;
+                                    top: 63%;
+                                    right: 5px;
+                                    transform: translateY(-50%);
+                                    padding: 20px 24px 20px 24px;
+                                    color: $blue;
+                                }
+
+                                p {
+                                    margin-bottom: 8px;
+                                }
+
+
+                            }
+                        }
+                    }
+
+                    .imperial {
+                        display: none;
+
+                        form {
+                            display: flex;
+                            flex-direction: column;
+                            margin-top: 32px;
+                            column-gap: 24px;
+
+                            .inner-text {
+                                margin-bottom: 8px;
+                            }
+
+                            .panel-2 {
+                                margin-bottom: 32px;
+                                position: relative;
+                                display: flex;
+                                column-gap: 24px;
+
+                                input {
+                                    background-color: $white;
+                                    width: 238px;
+                                    height: 69px;
+                                    border-radius: 12px;
+                                    border: 1px solid $borders;
+                                    padding: 20px 83px 20px 24px;
+                                    color: $gunmetal;
+                                    box-sizing: border-box;
+                                    cursor: pointer;
+
+
+                                    &:focus {
+                                        outline: solid 1px $blue;
+                                    }
+
+                                    &::placeholder {
+                                        color: $borders;
+                                    }
+
+
+                                }
+
+                                .unit-1 {
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 170px;
+                                    transform: translateY(-50%);
+                                    padding: 20px 24px 20px 24px;
+                                    color: $blue;
+                                }
+
+                                .unit-2 {
+                                    position: absolute;
+                                    top: 50%;
+                                    right: 0;
+                                    transform: translateY(-50%);
+                                    padding: 20px 24px 20px 24px;
+                                    color: $blue;
+                                }
+
+
+                            }
+                        }
+
+
+                    }
+
+                    
+                    .painel-azul-x {
+
+                        background-image: linear-gradient(to right, $blue, $degrade);
+                        width: 500px;
+                        //height: 134px;
+                        padding: 32px;
+                        border-radius: 10px 100px 100px 10px;
+                        cursor: pointer;
+                        margin-top: 8px;
+                        box-sizing: border-box;
+
+                        h4 {
+                            color: $white;
+                        }
+
+                        p {
+                            color: $white;
+                            margin-top: 16px;
+                        }
+                    }
+                    .painel-azul-y {
+
+                        background-image: linear-gradient(to right, $blue, $degrade);
+                        width: 500px;
+                        //height: 134px;
+                        padding: 32px;
+                        border-radius: 10px 100px 100px 10px;
+                        cursor: pointer;
+                        margin-top: 8px;
+                        box-sizing: border-box;
+
+                        h4 {
+                            color: $white;
+                        }
+
+                        p {
+                            color: $white;
+                            margin-top: 16px;
+                        }
+                    }
+
+                    .result-bmi {
+                        display: none;
+                        background-image: linear-gradient(to right, $blue, $degrade);
+                        width: 500px;
+                        //height: 134px;
+                        padding: 32px;
+                        border-radius: 10px 100px 100px 10px;
+                        cursor: pointer;
+                        box-sizing: border-box;
+
+                        .inf {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            column-gap: 24px;
+                            p {
+                                color: $white;
+                                //margin-top: 16px;
+                            }
+
+                            h4 {
+                                color: $white;
+                                padding-right: 74px;
+                            }
+
+                            p {
+                                width: 206px;
+                            }
+
+                        }
+                    }
+
+
+                }
+            }
+        }
+
+    }
+
+    @media(max-width: 1200px) {
+
+        //imagem background-image,
+        .hero {
+            background-image: linear-gradient(to right, rgba(214, 230, 254, 0.100), #D6E6FE);
+            height: 640px;
+            background-position: top center;
+            background-position-y: bottom;
+            border-radius: 0 0 32px 32px;
+
+
+            .container {
+                padding-left: 39px;
+                padding-right: 43px;
+
+                //logo
+                a {
+                    display: flex;
+                    justify-content: center;
+
+                    img {
+                        margin-top: 32px !important;
+                        width: 40px;
+                    }
+                }
+
+                //alteração do h1 e p 
+                .body-mass {
+                    flex-direction: column;
+                    align-items: center;
+                    box-sizing: border-box;
+
+                    .content {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        text-align: center;
+                        min-width: 686px;
+                        width: 100%;
+
+                        h1 {
+                            font-size: 48px;
+                            letter-spacing: -3px;
+                            margin-top: 40px !important;
+                            margin-bottom: 24px !important;
+                            padding-left: 170px;
+                            padding-right: 170px;
+
+                        }
+
+                        p {
+                            margin-bottom: 40px;
+
+                        }
+                    }
+
+                    .details-below {
+                        width: 686px;
+                        min-height: 467px;
+                        height: 100%;
+
+                        .btnraio {
+                            column-gap: 224px !important;
+                        }
+
+                        .panel-1 input {
+                            width: 299px !important;
+
+
+                        }
+
+                        .panel-2 {
+
+                            input {
+                                width: 299px !important;
+
+                            }
+
+                            .unit-1 {
+                                position: absolute;
+                                top: 50%;
+                                left: 233px !important;
+                                transform: translateY(-50%);
+                                padding: 20px 24px 20px 24px;
+                                color: $blue;
+                            }
+
+                        }
+
+                    }
+
+                    .painel-azul-x {
+                        width: 622px !important;
+                    }
+
+                    .painel-azul-y {
+                        width: 622px !important;
+                    }
+
+                    .result-bmi {                        
+                        width: 622px !important;
+                       
+                        .inf {
+                            
+                            p {
+                                color: $white;
+                                //margin-top: 16px;
+                            }
+
+                            h4 {
+                                font-size: 48px;
+                                letter-spacing: -1.5px;
+                                padding-right: 74px;
+                            }
+
+                            p {
+                                width: 267px !important;
+                            }
+
+                        }
+                    }
+                }
+
+
+
+
+
+            }
+        }
+    }
+
+    @media(max-width: 768px) {
+
+        //imagem background-image,
+        .hero {
+
+            .container {
+                padding-left: 23px;
+                padding-right: 24px;
+
+                //alteração do h1 e p 
+                .body-mass {
+                    flex-direction: column;
+                    align-items: center;
+                    box-sizing: border-box;
+
+                    .content {
+                        min-width: 327px;
+                        width: 100%;
+
+                        h1 {
+                            font-size: 48px;
+                            letter-spacing: -3px;
+                            margin-top: 40px !important;
+                            margin-bottom: 24px !important;
+                            padding-left: 46px;
+                            padding-right: 46px;
+
+                        }
+
+                        p {
+                            margin-bottom: 40px;
+
+                        }
+                    }
+
+                    .details-below {
+                        width: 340px;
+                        min-height: 649px;
+                        height: 100%;
+
+                        .btnraio {
+                            column-gap: 53px !important;
+                            margin-bottom: 32px;
+                        }
+                        form {
+                            flex-direction: column;
+
+                        }
+                        .panel-1 {
+                            margin-top: 0;
+
+                            input {
+                                width: 280px !important;
+
+                            }
+
+
+                        }
+
+                        .panel-2 {
+                            input {
+                                width: 132px !important;
+                                padding: 20px 24px 20px 24px !important;
+                            }
+
+                            .unit-2 {
+                                position: absolute;
+                                top: 50%;
+                                right: -14px !important;
+                                transform: translateY(-50%);
+                                padding: 20px 24px 20px 24px;
+                                color: $blue;
+                            }
+
+                            .unit-1 {
+                                position: absolute;
+                                top: 50%;
+                                left: 65px !important;
+                                transform: translateY(-50%);
+                                padding: 20px 24px 20px 24px;
+                                color: $blue;
+                            }
+                        }
+
+                        .painel-azul-x {
+                            background-image: linear-gradient(to right, $blue, $degrade);
+                            width: 280px !important;
+                            height: 257px;
+                            padding: 32px;
+                            border-radius: 16px;
+
+
+                            h4 {
+                                color: $white;
+                            }
+
+                            p {
+                                color: $white;
+                                margin-top: 16px;
+                            }
+                        }
+
+                        .painel-azul-y {
+                            background-image: linear-gradient(to right, $blue, $degrade);
+                            width: 280px !important;
+                            height: 257px;
+                            padding: 32px;
+                            border-radius: 16px;
+
+
+                            h4 {
+                                color: $white;
+                            }
+
+                            p {
+                                color: $white;
+                                margin-top: 16px;
+                            }
+                        }
+
+                        .result-bmi {
+                            display: none;
+                            background-image: linear-gradient(to right, $blue, $degrade);
+                            width: 280px !important;
+                            //height: 134px;
+                            padding: 32px;
+                            border-radius: 16px;
+                            
+    
+                            .inf {
+                                display: block;
+                                p {
+                                    color: $white;
+                                    //margin-top: 16px;
+                                }
+    
+                                h4 {
+                                    color: $white;
+                                    padding-right: 0;
+                                }
+    
+                                p {
+                                    width: 216px !important;
+                                }
+    
+                            }
+                        }
+
+                        
+                    }
+                }
+
+
+
+
+
+            }
+        }
+
+    }
+
+}
